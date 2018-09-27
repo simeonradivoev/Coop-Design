@@ -492,7 +492,7 @@ namespace Gizmos
 										break;
 									case "Delete":
 										editor.BeginEditing(id, text, position, style, multiline, passwordField);
-										if (Application.platform == RuntimePlatform.OSXPlayer || Application.platform == RuntimePlatform.OSXDashboardPlayer || Application.platform == RuntimePlatform.OSXEditor || (Application.platform == RuntimePlatform.WebGLPlayer && SystemInfo.operatingSystem.StartsWith("Mac")))
+										if (Application.platform == RuntimePlatform.OSXPlayer || Application.platform == RuntimePlatform.OSXEditor || (Application.platform == RuntimePlatform.WebGLPlayer && SystemInfo.operatingSystem.StartsWith("Mac")))
 										{
 											editor.Delete();
 										}
@@ -666,7 +666,7 @@ namespace Gizmos
 			{
 				//GUIUtility.textFieldInput = true;
 			}
-			editor.UpdateScrollOffsetIfNeeded();
+			editor.UpdateScrollOffsetIfNeeded(current);
 			changed = false;
 			if (flag)
 			{
