@@ -1,4 +1,4 @@
-A prototype for cooperative level design Made in Unity 3D
+A prototype for cooperative level design I made in Unity 3D way back in 2016 in Unity 5.4
 
 # How to use
 Drag and drop objects from the list into the scene. Then move and rotate them.
